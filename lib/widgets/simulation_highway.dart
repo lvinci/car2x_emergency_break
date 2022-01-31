@@ -52,12 +52,13 @@ class SimulationHighway extends StatelessWidget {
     final lanePositions = [32.0, 74.0, 116.0];
     // Calculate the car color
     Color? color;
-    if (car.id == selectedCar) {
-      color = Colors.blue;
-    }
+
     final action = _getAction(car.id);
     if (action != null) {
       color = action.color;
+    }
+    if (car.id == selectedCar) {
+      color = Colors.blue;
     }
     return Positioned(
       left: (width / 100.0) * car.position.latitude,
