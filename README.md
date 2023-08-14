@@ -1,4 +1,7 @@
-# notbrems_assistent
+# car2x_emergency_break
+
+This webapp simulates a car performing and emergency break action in a model car2x environment.
+A simulated emergency break message is sent out to all other cars, which then calculate the appropriate action to take.
 
 ![preview_screenshot.png](preview_screenshot.png)
 
