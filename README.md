@@ -1,6 +1,6 @@
 # notbrems_assistent
 
-A new Flutter project.
+![preview_screenshot.png](preview_screenshot.png)
 
 ## Getting Started
 
