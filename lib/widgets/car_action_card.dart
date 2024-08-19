@@ -24,7 +24,7 @@ class CarActionCard extends StatelessWidget {
           ],
           rows: actions
               .map((action) => DataRow(
-                    color: MaterialStateProperty.all<Color>(
+                    color: WidgetStatePropertyAll<Color>(
                       action.color?.withOpacity(0.2) ?? Colors.transparent,
                     ),
                     cells: [

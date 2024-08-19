@@ -15,7 +15,7 @@ class SimulationScreen extends StatefulWidget {
   const SimulationScreen({Key? key}) : super(key: key);
 
   @override
-  _SimulationScreenState createState() => _SimulationScreenState();
+  State<SimulationScreen> createState() => _SimulationScreenState();
 }
 
 /// Keeps the current state of the simulation

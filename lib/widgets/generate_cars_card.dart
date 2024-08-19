@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 /// Allows the user to generate new cars
@@ -11,7 +9,7 @@ class GenerateCarsCard extends StatefulWidget {
   final ValueChanged<int> onGenerateCars;
 
   @override
-  _GenerateCarsCardState createState() => _GenerateCarsCardState();
+  State<GenerateCarsCard> createState() => _GenerateCarsCardState();
 }
 
 /// Keeps the state of the amount of cars to be generated
@@ -29,7 +27,7 @@ class _GenerateCarsCardState extends State<GenerateCarsCard> {
           children: [
             Text(
               'Anzahl Autos',
-              style: Theme.of(context).textTheme.subtitle1,
+              style: Theme.of(context).textTheme.labelLarge,
             ),
             Row(
               children: [

@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:notbrems_assistent/models/car.dart';
 import 'package:notbrems_assistent/models/emergency_break_warning.dart';
@@ -19,7 +17,7 @@ class SendWarningCard extends StatefulWidget {
   final Car selectedCar;
 
   @override
-  _SendWarningCardState createState() => _SendWarningCardState();
+  State<SendWarningCard> createState() => _SendWarningCardState();
 }
 
 /// Keepos the state of the selected deceleration speed
@@ -37,7 +35,7 @@ class _SendWarningCardState extends State<SendWarningCard> {
           children: [
             Text(
               'Bremsverzögerung',
-              style: Theme.of(context).textTheme.subtitle1,
+              style: Theme.of(context).textTheme.labelLarge,
             ),
             Row(
               children: [
@@ -58,7 +56,7 @@ class _SendWarningCardState extends State<SendWarningCard> {
             const SizedBox(height: 10),
             Text(
               'Car2X Nachricht JSON',
-              style: Theme.of(context).textTheme.subtitle1,
+              style: Theme.of(context).textTheme.labelLarge,
             ),
             const SizedBox(height: 10),
             Container(
